@@ -1,1 +1,60 @@
 <!-- ...crickets... -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Registration form</h1>
+<form>
+
+	<div id="user_info">
+		<label for="username">Username</label>
+		<input type="text" name="username"  required>
+		<label for="password">password</label>
+		<input type="password" name="password" required>
+		<label for="email">Email</label>
+		<input type="email" name="email" required>
+	</div>
+
+	<div id="taxi_info">
+		<h2>Which taxi do you require?</h2>
+		<input type="radio" name="taxi" value="car">
+		<label for="car">Car</label>
+		<input type="radio" name="taxi" value="van">
+		<label for="van">Van</label>
+		<input type="radio" name="taxi" value="tuktuk">
+		<label for="tuktuk">Tuk Tuk</label>	
+	</div>
+
+	<div id="extras_info">
+		<h2>Choose your extras</h2>
+		<input type="checkbox" name="extras" value="babyseat">
+		<label for="baby_seat">Baby seat</label>
+		<input type="checkbox" name="extras" value="wheelchair">
+		<label for="wheelchair">Wheelchair access</label>
+		<input type="checkbox" name="extras" value="privacy_windows">
+		<label for="privacy_windows">Privacy windows</label>	
+	</div>
+
+	<div id="location_info">
+		<h2>Where would you like us to pick you up?</h2>
+		<label for="location">Pickup Location:</label> 
+		<select  name="location">
+			<option value="default">Select One</option>
+			<option value="XXXX">XXXX</option>
+			<option value="XXXX">XXXX</option>
+		</select>	
+	</div>
+
+	<div id="Add_info">
+		<h2>Additional Instructions</h2>
+		<label  for="special">Special</label>
+		<textarea placeholder="provide special instructions here"></textarea> 
+		<button>Submit</button>
+	</div>
+</form>
+
+
+</body>
+</html>
